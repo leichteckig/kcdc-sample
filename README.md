@@ -10,9 +10,27 @@ This sample demonstrates the following use cases:
 - [Protecting routes](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/Profile.js#L33)
 - [Calling APIs](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/ExternalApi.js)
 
+## Prerequisiteds for the Workshop
+
+Below are the prerequisites for this wporkshop "" at KCDC 2025. During this workshop, we'll write this application. Please make sure to read those requirement and prepare to fulfill them in advance to attend my workshop. Thank you! :heart: 
+
+| Requirement | Notes |
+| --- | --- |
+| Equipment | Your **own laptop**, with MacOS, Linux or Windows installed. You'd need to be able to connect to the conference's WiFi. |
+| Knowledge | Know your way around developing web application on your laptop in the **IDE of your choice**. I will be using Visual Studio Code, for example. |
+| Tools | **Node**, installed in the current LTS version. As of this date, it's version 22. | 
+| Tools | It's not 100% mandatory, but highly recommendend to have **Git** installed and a **GitHub account**, both ready to be used. As I'll be distributiong my code samples by this GitHub repository. | 
+| [Auth0 account]() | We'll create this account inside the workshop, so no worries. :) Just documenting it here, in case you want to catch up afterwards. |
+
 ## Project setup
 
-Use `yarn` to install the project dependencies:
+Use `npm` to install the project dependencies:
+
+```bash
+npm install
+```
+
+You can go  with `yarn`, too: 
 
 ```bash
 yarn install
