@@ -20,7 +20,8 @@ Below are the prerequisites for this wporkshop "" at KCDC 2025. During this work
 | Knowledge | Know your way around developing web application on your laptop in the **IDE of your choice**. I will be using Visual Studio Code, for example. |
 | Tools | **Node**, installed in the current LTS version. As of this date, it's version 22. | 
 | Tools | It's not 100% mandatory, but highly recommendend to have **Git** installed and a **GitHub account**, both ready to be used. As I'll be distributiong my code samples by this GitHub repository. | 
-| [Auth0 account]() | We'll create this account inside the workshop, so no worries. :) Just documenting it here, in case you want to catch up afterwards. |
+| Tools | Having brew installed, or access to install tools by cURL |
+| [Auth0 account](https://a0.to/ui-event) | We'll create this account inside the workshop, so no worries. :) Just documenting it here, in case you want to catch up afterwards. |
 
 ## Project setup
 
