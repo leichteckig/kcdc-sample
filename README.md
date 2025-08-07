@@ -1,105 +1,34 @@
-# Auth0 React SDK Sample Application
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This sample demonstrates the integration of [Auth0 React SDK](https://github.com/auth0/auth0-react) into a React application created using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). The sample is a companion to the [Auth0 React SDK Quickstart](https://auth0.com/docs/quickstart/spa/react).
+## Getting Started
 
-This sample demonstrates the following use cases:
-
-- [Login](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/components/NavBar.js#L72-L79)
-- [Logout](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/components/NavBar.js#L102-L108)
-- [Showing the user profile](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/Profile.js)
-- [Protecting routes](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/Profile.js#L33)
-- [Calling APIs](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/ExternalApi.js)
-
-## Project setup
-
-Use `yarn` to install the project dependencies:
+First, run the development server:
 
 ```bash
-yarn install
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Configuration
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Create an API
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-For the ["call an API"](https://auth0.com/docs/quickstart/spa/react/02-calling-an-api) page to work, you will need to [create an API](https://auth0.com/docs/apis) using the [management dashboard](https://manage.auth0.com/#/apis). This will give you an API identifier that you can use in the `audience` configuration field below.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-If you do not wish to use an API or observe the API call working, you should not specify the `audience` value in the next step. Otherwise, you will receive a "Service not found" error when trying to authenticate.
+## Prerequisiteds for the Workshop
 
-### Configure credentials
+Below are the prerequisites for this wporkshop "" at KCDC 2025. During this workshop, we'll write this application. Please make sure to read those requirement and prepare to fulfill them in advance to attend my workshop. Thank you! :heart: 
 
-The project needs to be configured with your Auth0 domain and client ID in order for the authentication flow to work.
-
-To do this, first copy `src/auth_config.json.example` into a new file in the same folder called `src/auth_config.json`, and replace the values with your own Auth0 application credentials, and optionally the base URLs of your application and API:
-
-```json
-{
-  "domain": "{YOUR AUTH0 DOMAIN}",
-  "clientId": "{YOUR AUTH0 CLIENT ID}",
-  "audience": "{YOUR AUTH0 API_IDENTIFIER}",
-  "appOrigin": "{OPTIONAL: THE BASE URL OF YOUR APPLICATION (default: http://localhost:3000)}",
-  "apiOrigin": "{OPTIONAL: THE BASE URL OF YOUR API (default: http://localhost:3001)}"
-}
-```
-
-**Note**: Do not specify a value for `audience` here if you do not wish to use the API part of the sample.
-
-## Run the sample
-
-### Compile and hot-reload for development
-
-This compiles and serves the React app and starts the backend API server on port 3001.
-
-```bash
-yarn run dev
-```
-
-## Deployment
-
-### Compiles and minifies for production
-
-```bash
-yarn run build
-```
-
-### Docker build
-
-To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
-
-### Run your tests
-
-```bash
-yarn run test
-```
-
-## Frequently Asked Questions
-
-If you're having issues running the sample applications, including issues such as users not being authenticated on page refresh, please [check the auth0-react FAQ](https://github.com/auth0/auth0-react/blob/master/FAQ.md).
-
-## What is Auth0?
-
-Auth0 helps you to:
-
-* Add authentication with [multiple sources](https://auth0.com/docs/identityproviders), either social identity providers such as **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce** (amongst others), or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS, or any SAML Identity Provider**.
-* Add authentication through more traditional **[username/password databases](https://auth0.com/docs/connections/database/custom-db)**.
-* Add support for **[linking different user accounts](https://auth0.com/docs/users/user-account-linking)** with the same user.
-* Support for generating signed [JSON Web Tokens](https://auth0.com/docs/tokens/json-web-tokens) to call your APIs and **flow the user identity** securely.
-* Analytics of how, when, and where users are logging in.
-* Pull data from other sources and add it to the user profile through [JavaScript rules](https://auth0.com/docs/rules).
-
-## Create a Free Auth0 Account
-
-1. Go to [Auth0](https://auth0.com) and click **Sign Up**.
-2. Use Google, GitHub, or Microsoft Account to login.
-
-## Issue Reporting
-
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/responsible-disclosure-policy) details the procedure for disclosing security issues.
-
-## Author
-
-[Auth0](https://auth0.com)
-
-## License
-
-This project is licensed under the MIT license. See the [LICENSE](../LICENSE) file for more info.
+| Requirement | Notes |
+| --- | --- |
+| Equipment | Your **own laptop**, with MacOS, Linux or Windows installed. You'd need to be able to connect to the conference's WiFi. |
+| Knowledge | Know your way around developing web application on your laptop in the **IDE of your choice**. I will be using Visual Studio Code, for example. |
+| Tools | **Node**, installed in the current LTS version. As of this date, it's version 22. | 
+| Tools | It's not 100% mandatory, but highly recommendend to have **Git** installed and a **GitHub account**, both ready to be used. As I'll be distributiong my code samples by this GitHub repository. | 
+| Tools | Having brew installed, or access to install tools by cURL |
+| [Auth0 account](https://a0.to/ui-event) | We'll create this account inside the workshop, so no worries. :) Just documenting it here, in case you want to catch up afterwards. |
