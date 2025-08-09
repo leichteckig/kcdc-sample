@@ -1,5 +1,7 @@
 import { auth0 } from "@/lib/auth0";
 import './globals.css';
+import BasicInfoForm from "@/components/auth0/BasicInfo";
+import MFAWrapper from "@/components/auth0/MFAWrapper";
 
 export default async function Home() {
   // Fetch the user session
@@ -35,6 +37,12 @@ export default async function Home() {
       <main className="w-full max-w-4xl p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h1 className="text-2xl font-semibold mb-3">Welcome, {session.user.name}!</h1>
         <p className="mb-3">This is your account settings.</p>
+        <section className="flex p-5">
+          <BasicInfoForm user={session.user} />
+        </section>
+        <section className="flex p-5">
+            <MFAWrapper></MFAWrapper>
+        </section>
         <a 
           className="w-full inline-block text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" 
           href="/auth/logout"
