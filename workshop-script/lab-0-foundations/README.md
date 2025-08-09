@@ -17,9 +17,9 @@ Welcome to our first hands-on lab\! By the end of this session, you will have a 
 
 Before you begin, make sure you have:
 
-  - A free Auth0 account.
+  - A free Auth0 account. Important note: Don't start with the quickstarts there just yet!
   - Node.js (version 18 or higher) installed on your machine.
-  - A new Next.js project. If you don't have one, create it now by running:
+  - A new Next.js project with TypeScript. If you don't have one, create it now by running:
     ```bash
     npx create-next-app@latest kcdc-nextjs-app
     ```
@@ -29,7 +29,7 @@ Before you begin, make sure you have:
 
 ## 🚀 Step-by-Step Instructions
 
-> ### **Please Follow Along Here\!**
+> ### **Please Follow Along Here!**
 >
 > 👉 **[https://auth0.com/docs/quickstart/webapp/nextjs/interactive](https://auth0.com/docs/quickstart/webapp/nextjs/interactive)** 👈
 >
@@ -81,7 +81,6 @@ export const auth0 = new Auth0Client();
 ```
 
 Next up, please add the Authentication Middleware: The Next.js Middleware allows you to run code before a request is completed. Therefore, create a file at `src/middleware.ts`. This file is used to enforce authentication on specific routes:
-
 
 ```ts
 import type { NextRequest } from "next/server";
@@ -152,8 +151,10 @@ Finally, let's create a profile page that only logged-in users can see.
 
     > **Best Practice:** The `withPageAuthRequired` Higher-Order Component wraps your page and automatically redirects users to the login page if they are not authenticated. This is the standard way to protect pages.
 
+### Step 8: Apply some styling if you like. My example can be found in `workshop-script/lab-0-foundations/src/app/page.tsx`. 🎨
+
 -----
 
 ## 🏆 Conclusion
 
-Congratulations on getting through this foundational lab\! You have successfully built a complete Next.js application with a secure, production-ready authentication system. You can now log in, log out, and view a protected profile page. With this secure base, we are ready to tackle the rest of the workshop. Great work\!
+Congratulations on getting through this foundational lab! You have successfully built a complete Next.js application with a secure, production-ready authentication system. You can now log in, log out, and view a protected profile page. With this secure base, we are ready to tackle the rest of the workshop. Great work!
