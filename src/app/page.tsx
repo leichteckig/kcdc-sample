@@ -33,11 +33,11 @@ export default async function Home() {
 
   // If session exists, show a welcome message and logout button
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center">
       <main className="w-full max-w-4xl p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <h1 className="text-2xl font-semibold mb-3">Welcome, {session.user.name}!</h1>
-        <p className="mb-3">This is your account settings.</p>
-        <section className="flex p-5">
+        <section>
+          <h1 className="text-2xl font-semibold mb-3">Welcome, {session.user.name}!</h1>
+          <p className="mb-3">This is your account settings.</p>
           <BasicInfoForm user={session.user} />
         </section>
         <section className="flex p-5">
